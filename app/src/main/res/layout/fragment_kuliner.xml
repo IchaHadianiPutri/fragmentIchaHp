@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".kulinerFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#0C10FE">
+
+
+        <TextView
+            android:id="@+id/kuliner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kuliner"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.075"/>
+
+        <ImageView
+            android:id="@+id/makan"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/kuliner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/kuliner"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:text="Jurusan Kuliner merupakan salah satu bidang studi yang mempelajari tentang bagaimana teknik untuk menyajikan makanan dengan memperhatikan beberapa faktor yaitu estetika atau keindahan, kualitas rasa masakan, serta nilai kebutuhan gizinya"
+            app:layout_constraintTop_toBottomOf="@+id/makan"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:justificationMode="inter_word"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

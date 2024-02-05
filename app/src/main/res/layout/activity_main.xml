@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fragmen.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/pplgFragment"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:text="PPLG"
+            tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/toFragment"
+            android:layout_width="185dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:text="TO"
+            android:layout_below="@+id/pplgFragment"
+            tools:ignore="TouchTargetSizeCheck" />
+
+
+        <Button
+            android:id="@+id/kulinerFragment"
+            android:layout_width="185dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/pplgFragment"
+            android:layout_alignParentEnd="true"
+            android:text="KULINER"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/toFragment"
+            app:layout_constraintTop_toBottomOf="@+id/pplgFragment"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/busanaFragment"
+            android:layout_width="185dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/toFragment"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="BUSANA"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/tpflFragment"
+            android:layout_width="185dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:text="TPFL"
+            android:layout_below="@+id/kulinerFragment"
+            android:layout_alignParentEnd="true"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fragmentcontainer"
+        android:layout_width="match_parent"
+        android:layout_height="760dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/busanaFragment"
+        tools:ignore="NotSibling" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
